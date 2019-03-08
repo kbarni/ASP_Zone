@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="Zone"
+	ProjectGUID="{69D28A4C-DF82-3D17-B142-88E9F7AB314F}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32" />
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="2"
+			IntermediateDirectory="build\objects\debug\obj\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;c:\Qt\4.7.4\include\QtCore&quot;,&quot;c:\Qt\4.7.4\include\QtGui&quot;,&quot;c:\Qt\4.7.4\include&quot;,&quot;.&quot;,&quot;..\Plugin&quot;,&quot;c:\Qt\4.7.4\include\ActiveQt&quot;,&quot;build\objects\debug\moc&quot;,c:\Qt\4.7.4\mkspecs\default"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation="build\objects\debug\obj\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="3"
+				ExceptionHandling="1"
+				GeneratePreprocessedFile="0"
+				ObjectFile="build\objects\debug\obj\"
+				Optimization ="4"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="c:\Qt\4.7.4\lib\QtGuid4.lib c:\Qt\4.7.4\lib\QtCored4.lib"
+				AdditionalLibraryDirectories="c:\Qt\4.7.4\lib"
+				GenerateDebugInformation="true"
+				IgnoreImportLibrary="true"
+				LinkTimeCodeGeneration="0"
+				OutputFile="debug\Zone.dll"
+				ProgramDatabaseFile=""
+				SubSystem="0"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG" />
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="2"
+			IntermediateDirectory="build\objects\release\obj\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;c:\Qt\4.7.4\include\QtCore&quot;,&quot;c:\Qt\4.7.4\include\QtGui&quot;,&quot;c:\Qt\4.7.4\include&quot;,&quot;.&quot;,&quot;..\Plugin&quot;,&quot;c:\Qt\4.7.4\include\ActiveQt&quot;,&quot;build\objects\release\moc&quot;,c:\Qt\4.7.4\mkspecs\default"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation="build\objects\release\obj\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="0"
+				ExceptionHandling="1"
+				GeneratePreprocessedFile="0"
+				ObjectFile="build\objects\release\obj\"
+				Optimization ="2"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="c:\Qt\4.7.4\lib\QtGui4.lib c:\Qt\4.7.4\lib\QtCore4.lib"
+				AdditionalLibraryDirectories="c:\Qt\4.7.4\lib"
+				GenerateDebugInformation="false"
+				IgnoreImportLibrary="true"
+				LinkIncremental="1"
+				LinkTimeCodeGeneration="0"
+				OutputFile="release\Zone.dll"
+				ProgramDatabaseFile=""
+				SubSystem="0"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT" />
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="ZoneFilter.cpp" />
+			<File
+				RelativePath="ZonePlugin.cpp" />
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="ZoneFilter.h" />
+			<File
+				RelativePath="ZonePlugin.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.7.4\bin\moc.exe;ZonePlugin.h"
+						CommandLine="C:\Qt\4.7.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.7.4\include\QtCore&quot; -I&quot;c:\Qt\4.7.4\include\QtGui&quot; -I&quot;c:\Qt\4.7.4\include&quot; -I&quot;.&quot; -I&quot;..\Plugin&quot; -I&quot;c:\Qt\4.7.4\include\ActiveQt&quot; -I&quot;build\objects\debug\moc&quot; -Ic:\Qt\4.7.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 ZonePlugin.h -o build\objects\debug\moc\moc_ZonePlugin.cpp"
+						Description="MOC ZonePlugin.h"
+						Outputs="build\objects\debug\moc\moc_ZonePlugin.cpp"
+						Path="c:\Qt\4.7.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.7.4\bin\moc.exe;ZonePlugin.h"
+						CommandLine="C:\Qt\4.7.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\Qt\4.7.4\include\QtCore&quot; -I&quot;c:\Qt\4.7.4\include\QtGui&quot; -I&quot;c:\Qt\4.7.4\include&quot; -I&quot;.&quot; -I&quot;..\Plugin&quot; -I&quot;c:\Qt\4.7.4\include\ActiveQt&quot; -I&quot;build\objects\release\moc&quot; -Ic:\Qt\4.7.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 ZonePlugin.h -o build\objects\release\moc\moc_ZonePlugin.cpp"
+						Description="MOC ZonePlugin.h"
+						Outputs="build\objects\release\moc\moc_ZonePlugin.cpp"
+						Path="c:\Qt\4.7.4\bin" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="build\objects\debug\moc\moc_ZonePlugin.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="build\objects\release\moc\moc_ZonePlugin.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="build\objects\debug\rcc\qrc_resources.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="build\objects\release\rcc\qrc_resources.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="qrc;*"
+			UniqueIdentifier="{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}"
+			ParseFiles="false">
+			<File
+				RelativePath="resources.qrc">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.7.4\bin\rcc.exe;img\zones.png;resources.qrc"
+						CommandLine="C:\Qt\4.7.4\bin\rcc.exe -name resources resources.qrc -o build\objects\debug\rcc\qrc_resources.cpp"
+						Description="RCC resources.qrc"
+						Outputs="build\objects\debug\rcc\qrc_resources.cpp"
+						Path="c:\Qt\4.7.4\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.7.4\bin\rcc.exe;img\zones.png;resources.qrc"
+						CommandLine="C:\Qt\4.7.4\bin\rcc.exe -name resources resources.qrc -o build\objects\release\rcc\qrc_resources.cpp"
+						Description="RCC resources.qrc"
+						Outputs="build\objects\release\rcc\qrc_resources.cpp"
+						Path="c:\Qt\4.7.4\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="img\zones.png" />
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

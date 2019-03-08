@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BZonePlugin_kbz</class>
+ <widget class="SettingsWidget" name="BZonePlugin_kbz">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>242</width>
+    <height>103</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>212</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Zone preview</string>
+  </property>
+  <property name="BIBBLE_PLUGIN_NAME" stdset="0">
+   <string notr="true">Zone</string>
+  </property>
+  <property name="BIBBLE_PLUGIN_GROUP" stdset="0">
+   <string notr="true">Zone_kb</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>81</width>
+          <height>17</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="kbz_about_button">
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="text">
+         <string notr="true">?</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="kbz_enabled_check">
+        <property name="text">
+         <string>Preview Zone System</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Highlight a zone</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="margin">
+       <number>5</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="kbz_highlight_label">
+        <property name="text">
+         <string>OFF</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSlider" name="kbz_highlight_slider">
+        <property name="styleSheet">
+         <string notr="true">QSlider::groove:horizontal {border-image: url(:/img/zones.png)0 18 0 18;}</string>
+        </property>
+        <property name="minimum">
+         <number>-1</number>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>-1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBelow</enum>
+        </property>
+        <property name="tickInterval">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="kbz_highlight_edit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Highlight zone number...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>SettingsWidget</class>
+   <extends>QWidget</extends>
+   <header>settingswidget.h</header>
+   <container>1</container>
+   <slots>
+    <slot>setOption(int)</slot>
+    <slot>setOption(QString)</slot>
+    <slot>setOption(bool)</slot>
+    <slot>buttonClick()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>kbz_enabled_check</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>BZonePlugin_kbz</receiver>
+   <slot>setOption(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>kbz_about_button</sender>
+   <signal>clicked()</signal>
+   <receiver>BZonePlugin_kbz</receiver>
+   <slot>buttonClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>30</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>kbz_highlight_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>BZonePlugin_kbz</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>kbz_highlight_edit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>BZonePlugin_kbz</receiver>
+   <slot>setOption(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
